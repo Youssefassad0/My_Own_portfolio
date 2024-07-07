@@ -1,9 +1,7 @@
-import React from 'react'
-import '/hero.css'
+import React from "react";
+import './hero.css'
 function Hero() {
-  return (
-    <div>Hero</div>
-  )
+  return <div>Hero</div>;
 }
 
-export default Hero
+export default Hero;
