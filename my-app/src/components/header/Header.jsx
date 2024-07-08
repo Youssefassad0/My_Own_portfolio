@@ -25,7 +25,7 @@ function Header() {
       </nav>
 
       <button className="mode flex" >
-        <span className="icon-moon-o"></span>
+        <span className="icon-moon"></span>
       </button>
 {
   showModal && ( <div className="flexed">
