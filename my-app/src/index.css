@@ -14,6 +14,8 @@ html {
 }
 :root {
   --primary: #000;
+  --secondary:rgb(24, 24, 27);
+  --border: rgba(63,63,70,0.4) ;
 }
 .light {
   --primary: #fff;
@@ -23,8 +25,13 @@ body {
   color: white;
 }
 .container {
-  border: 2px solid red;
+  border: 2px solid var(--border);
   width: 80%;
   margin-left: auto;
   margin-right: auto;
+  background-color: var(--secondary) ;
+}
+.devider{
+  border-bottom: 1px solid var(--border);
+  margin: 3rem 0;
 }

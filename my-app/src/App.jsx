@@ -8,9 +8,13 @@ function App() {
   return (
     <div className="container">
       <Header />
+      <div className="devider" />
       <Hero />
+      <div className="devider" />
       <Main />
+      <div className="devider" />
       <Contact />
+      <div className="devider" />
       <Footer />
     </div>
   );
