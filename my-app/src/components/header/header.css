@@ -29,6 +29,43 @@ header button {
 header button.menu {
   display: none;
 }
+header button.menu:hover {
+  cursor: pointer;
+}
+/* Icons  */
+header .icon-menu,
+header button.mode {
+  background-color: var(--bgHeader);
+  height: 2.5rem;
+  width: 2.5rem;
+  border-radius: 50%;
+  justify-content: center;
+  text-align: center;
+  color: var(--subtitle);
+  border: 1px solid rgba(250, 128, 114, 0.564);
+}
+header .icon-menu:hover,
+header button.mode:hover{
+    color: var(--title);
+    cursor: pointer; 
+    transition: 0.3s;
+    border: 1px solid rgba(250, 128, 114, 0.995);
+}
+
+
+header .icon-circle-with-cross{
+    font-size: 1.3rem;
+    cursor: pointer;
+    color: var(--subtitle);
+    transition: 0.3s;
+
+}
+header .icon-circle-with-cross:hover{
+    font-size: 1.6rem;
+    color: crimson;
+    rotate: 180deg;
+}
+
 
 /* Model  */
 header .flexed {
@@ -46,7 +83,7 @@ header .flexed ul.modal {
   border-radius: 1rem;
   padding: 1rem 2rem;
   background-color: var(--secondary);
-  animation: moveModal  0.7s 1  ;
+  animation: moveModal 0.7s 1;
 }
 header .flexed ul.modal li {
   border-bottom: 1px solid var(--border);
@@ -65,17 +102,17 @@ header .flexed ul.modal li:first-child {
 header .flexed ul.modal li:last-child {
   border: none;
 }
-@keyframes moveModal {
-    0%{
-        scale: 0;
-    }
-    60%{
-        scale: 1.2;
-    }
-    100% {
-        scale: 1;
-    }
 
+@keyframes moveModal {
+  0% {
+    scale: 0;
+  }
+  60% {
+    scale: 1.2;
+  }
+  100% {
+    scale: 1;
+  }
 }
 @media (max-width: 700px) {
   header.flex nav {
