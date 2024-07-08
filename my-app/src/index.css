@@ -35,6 +35,7 @@ body {
   margin-left: auto;
   margin-right: auto;
   background-color: var(--secondary) ;
+  padding: 0 5rem ;
 }
 .devider{
   border-bottom: 1px solid var(--border);
@@ -64,4 +65,17 @@ button{
 }
 button:active{
   scale: 0.9;
+}
+
+@media (max-width:1000px){
+  .container {
+    width: 90%;
+    padding: 0 1.7rem;
+  }
+}
+@media (max-width:600px){
+  .container {
+    width: 98%;
+    padding: 0 1.6rem;
+  }
 }

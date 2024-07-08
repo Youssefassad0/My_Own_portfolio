@@ -6,9 +6,9 @@ section.hero .left-section{
 
 }
 section.hero .avatar{
-    width: 88px;
+    width: 150px;
     border-radius: 50%;
-    height: 100px;
+    height: 160px;
     border: 1px solid darkorange;
     padding: 4px;
     box-shadow: 2px 2px 40px gray inset;

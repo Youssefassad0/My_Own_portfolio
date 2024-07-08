@@ -3,9 +3,9 @@ import "./hero.css";
 function Hero() {
   return (
     <section className="hero flex">
-      <div className="left-section border">
+      <div className="left-section">
         <div className="parent-avatar">
-          <img src="assad.png" className="avatar" alt="" />
+          <img src="image_assad1.png" className="avatar" alt="" />
           <span className="" ></span>
         </div>
       </div>
