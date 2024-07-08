@@ -5,7 +5,7 @@ function Header() {
   const [showModal,setShowModal]=useState(false);
   return (
     <header className="flex">
-      <button onClick={()=>setShowModal(true)} className="menu">Show Modal</button>
+      <button onClick={()=>setShowModal(true)} className="menu icon-menu"/>
       <div />
       <nav>
         <ul className="flex">
@@ -24,12 +24,13 @@ function Header() {
         </ul>
       </nav>
 
-      <button>Light</button>
+      <button className="icon-moon-o" ></button>
 {
   showModal && ( <div className="flexed">
     <ul className="modal">
       <li  >
-        <button onClick={()=>setShowModal(false)} >close</button>
+        <button className="icon-circle-with-cross" onClick={()=>setShowModal(false)} />
+      
       </li>
       <li>
         <Link to="/about">about</Link>

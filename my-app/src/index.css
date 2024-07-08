@@ -48,6 +48,9 @@ a{
   color: initial;
   transition: 0.2s;
 }
+a:hover{
+  cursor: pointer;
+}
 .flex{
   display: flex;
   align-items: center;
@@ -55,4 +58,7 @@ a{
 }
 .border{
   border: 2px solid red;
+}
+button{
+  all: unset;
 }
