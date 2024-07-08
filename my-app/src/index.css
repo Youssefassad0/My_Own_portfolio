@@ -1,11 +1,30 @@
-:root{
---primary:#000;
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
+html {
+  font-family: "Roboto", sans-serif;
+  box-sizing: border-box;
 }
-
-body{
-  background-color:var(--primary) ;
+* {
+  margin: 0;
+  padding: 0;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+:root {
+  --primary: #000;
+}
+.light {
+  --primary: #fff;
+}
+body {
+  background-color: var(--primary);
   color: white;
 }
-.light{
---primary:#fff;
+.container {
+  border: 2px solid red;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
 }
