@@ -35,9 +35,18 @@ html {
 
 .light {
   --primary: #fff;
-  --secondary: $fff;
-
+  --secondary: #f9f9f9;
+  --border: rgba(0, 0, 0, 0.1);
+  --title: #333;
+  --subtitle: #666;
+  --bgHeader: #f1f1f1;
+  --blue: #007bff;
+  --icon-hover: #ccc;
+  --scrollbar-bg: #ddd;
+  --scrollbar-thumb: #bbb;
+  --scrollbar-thumb-hover: #888;
 }
+
 
 body {
   background-color: var(--primary);
@@ -132,10 +141,9 @@ button:hover {
   box-shadow: 0px 0px 20px -1px gold;
   transition: 0.7s;
 }
-.scroll2Top:hover{
+.scroll2Top:hover {
   background-color: rgb(228, 234, 237);
   box-shadow: 0px 0px 20px 1px gold;
-
 }
 @media (max-width: 1000px) {
   .container {
@@ -155,10 +163,10 @@ button:hover {
     width: 98%;
     padding: 0 var(--container-padding);
   }
-  .scroll2Top{
+  .scroll2Top {
     opacity: 0.4;
     height: 2rem;
-    width:2rem;
+    width: 2rem;
     font-size: 0.6em;
   }
 }

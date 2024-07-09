@@ -3,7 +3,8 @@ import "./header.css";
 import { Link } from "react-router-dom";
 function Header() {
   const [showModal, setShowModal] = useState(false);
-  const [theme, setTheme] = useState("dark");
+  const local=localStorage.getItem("mood")
+  const [theme, setTheme] = useState(local ?? "dark");
   useEffect(() => {
     if (theme === "light") {
       document.body.classList.remove("dark");
@@ -49,7 +50,7 @@ function Header() {
         }}
         className="mode flex"
       >
-        <span className="icon-moon"></span>
+        <span className={theme==="light"? "icon-sun":"icon-moon"}></span>
       </button>
       {showModal && (
         <div className="flexed">
