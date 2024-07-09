@@ -14,7 +14,7 @@ function Main() {
         <button>REACT+LARAVEL</button>
       </section>
 
-      <section className="border flex right-section">
+      <section className="flex right-section">
         {Projects.map((p) => (
           <article className="card" key={p.id}>
             <img width={266} src={p.imageUrl} alt={p.title} />

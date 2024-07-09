@@ -32,7 +32,9 @@ function Contact() {
           <button className="submit" >Send</button>
         </form>
 
-        <div className="animation border"></div>
+        <div className="animation border">
+          animation
+        </div>
       </div>
     </section>
   );

@@ -8,18 +8,18 @@ function Header() {
       <button onClick={()=>setShowModal(true)} className="menu icon-menu flex"/>
       <div />
       <nav>
-        <ul className="flex">
+      <ul className="flex">
           <li>
-            <Link to="/about">about</Link>
+            <Link to="/about">About</Link>
           </li>
           <li>
-            <Link to="/">Articles</Link>
+            <Link to="/articles">Articles</Link>
           </li>
           <li>
-            <Link to="/">Projects</Link>
+            <Link to="/projects">Projects</Link>
           </li>
           <li>
-            <Link to="/about">Contact</Link>
+            <Link to="/contact">Contact</Link>
           </li>
         </ul>
       </nav>
@@ -29,24 +29,27 @@ function Header() {
       </button>
 {
   showModal && ( <div className="flexed">
-    <ul className="modal">
-      <li  >
-        <button className="icon-circle-with-cross" onClick={()=>setShowModal(false)} />
-      
-      </li>
-      <li>
-        <Link to="/about">about</Link>
-      </li>
-      <li>
-        <Link to="/">Articles</Link>
-      </li>
-      <li>
-        <Link to="/">Projects</Link>
-      </li>
-      <li>
-        <Link to="/about">Contact</Link>
-      </li>
-    </ul>
+   <ul className="modal">
+              <li>
+                <button
+                  className="icon-circle-with-cross"
+                  onClick={() => setShowModal(false)}
+                  aria-label="Close Menu"
+                />
+              </li>
+              <li>
+                <Link to="/about" onClick={() => setShowModal(false)}>About</Link>
+              </li>
+              <li>
+                <Link to="/articles" onClick={() => setShowModal(false)}>Articles</Link>
+              </li>
+              <li>
+                <Link to="/projects" onClick={() => setShowModal(false)}>Projects</Link>
+              </li>
+              <li>
+                <Link to="/contact" onClick={() => setShowModal(false)}>Contact</Link>
+              </li>
+            </ul>
   </div>)
 }
      

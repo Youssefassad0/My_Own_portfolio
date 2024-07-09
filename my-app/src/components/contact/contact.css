@@ -109,12 +109,18 @@ section.contact-us button.submit:active {
   section.contact-us form div.flex {
     flex-direction: column;
     align-items: start;
-    width: 100%;
+    width: 80%;
+    margin-right: auto;
+    margin-left: auto;
   }
   section.contact-us #email,
   section.contact-us #message {
     width: 100%;
     margin-left: 0;
     padding: 0.5rem 0 ;
+  }
+  section.contact-us .submit{
+    width: 30%;
+    align-self: center;
   }
 }

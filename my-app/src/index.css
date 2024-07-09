@@ -35,7 +35,7 @@ html {
 
 body {
   background-color: var(--primary);
-  color: white;
+  color:white;
 }
 
 .container {
@@ -88,10 +88,13 @@ button:hover {
  cursor: pointer;
 }
 
+
+
+
 @media (max-width: 1000px) {
   .container {
     --container-padding: 1.7rem;
-    width: 90%;
+    width: 90%; 
     padding: 0 var(--container-padding);
   }
 
@@ -106,5 +109,5 @@ button:hover {
     width: 98%;
     padding: 0 var(--container-padding);
   }
-  
+
 }
