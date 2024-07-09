@@ -12,7 +12,7 @@ function Main() {
 
   const filteredProjects = currentActive === "all"
     ? Projects
-    : Projects.filter((p) => p.category.toLowerCase() === currentActive.toLowerCase());
+    : Projects.filter((p) => p.category === currentActive);
 
   return (
     <main className="flex">

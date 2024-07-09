@@ -30,7 +30,7 @@ main section.left-section.flex button.active {
   border: 1px solid var(--blue);
 }
 main section.right-section.flex {
-  /* flex-grow: 1; */
+  flex-grow: 1;
   justify-content: center;
   flex-wrap: wrap;
   row-gap: 2rem;
@@ -61,6 +61,7 @@ main section.right-section.flex {
 }
 .card .box h2.title {
   color: var(--title);
+  text-transform: capitalize;
 }
 .card .box p.sub-title {
   color: var(--subtitle);
