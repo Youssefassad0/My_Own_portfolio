@@ -4,6 +4,7 @@ html {
   font-family: "Roboto", sans-serif;
   box-sizing: border-box;
   letter-spacing: 0.2px;
+  scroll-behavior: smooth;
 }
 
 * {
@@ -58,7 +59,9 @@ body::-webkit-scrollbar-thumb {
 }
 
 body::-webkit-scrollbar-thumb:hover {
-  background-color: var(--scrollbar-thumb-hover); /* Hover color of the scrollbar thumb */
+  background-color: var(
+    --scrollbar-thumb-hover
+  ); /* Hover color of the scrollbar thumb */
 }
 
 .container {
@@ -112,6 +115,22 @@ button:hover {
   cursor: pointer;
 }
 
+.scroll2Top {
+  background-color: rgb(91, 156, 205);
+  width: 2.6rem;
+  height: 2.6rem;
+  border-radius: 50%;
+  position: fixed;
+  bottom: 20px;
+  right: 3%;
+  text-align: center;
+  color: #000;
+  font-size: 1.5rem;
+  border: 1px solid var(--blue);
+}
+.scroll2Top:hover{
+  background-color: rgba(31, 183, 248, 0.263);
+}
 @media (max-width: 1000px) {
   .container {
     --container-padding: 1.7rem;
@@ -129,5 +148,10 @@ button:hover {
   .container {
     width: 98%;
     padding: 0 var(--container-padding);
+  }
+  .scroll2Top{
+    opacity: 0.4;
+    height: 2rem;
+    width:2rem;
   }
 }

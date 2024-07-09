@@ -9,18 +9,21 @@ import ParticleRing from "./components/ParticleRing/ParticleRing";
 function App() {
   return (
     <BrowserRouter>
-    <div className="container">
-      <Header />
-      <Hero />
-      <div className="devider" />
-      <Main />
-      <div className="devider" />
-      <Contact />
-      <div className="devider" />
-      <ParticleRing /> 
-      <div className="devider" />
-      <Footer />
-    </div>
+      <div className="container" id="up" >
+        <Header />
+        <Hero />
+        <div className="devider" />
+        <Main />
+        <div className="devider" />
+        <Contact />
+        <div className="devider" />
+        <ParticleRing />
+        <div className="devider" />
+        <Footer />
+        <a href="#up">
+          <button className="icon-circle-up scroll2Top"></button>
+        </a>
+      </div>
     </BrowserRouter>
   );
 }

@@ -1,90 +1,110 @@
 section.hero {
-    margin-top: 3rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 2rem;
+  margin-top: 3rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem;
+}
+
+section.hero .left-section {
+  flex-grow: 1;
+  animation: fadeInLeft 1.5s ease-out;
+}
+
+section.hero .avatar {
+  width: 150px;
+  border-radius: 50%;
+  height: 160px;
+  border: 1px solid darkorange;
+  padding: 4px;
+  box-shadow: 2px 2px 40px gray inset;
+  animation: fadeIn 1.5s ease-out;
+}
+
+section.hero h1.title {
+  font-size: 2.85rem;
+  line-height: 3.3rem;
+  margin: 24px 0;
+  color: var(--title);
+  animation: fadeInUp 1.5s ease-out;
+  animation-delay: 0.5s;
+  animation-fill-mode: backwards;
+}
+
+section.hero p.sub-title {
+  color: var(--subtitle);
+  font-size: 0.9rem;
+  line-height: 1.7rem;
+  padding-bottom: 32px;
+  animation: fadeInUp 1.5s ease-out;
+  animation-delay: 1s;
+  animation-fill-mode: backwards;
+}
+
+section.hero .all-icons {
+  font-size: 1.5rem;
+  gap: 1.5rem;
+  cursor: pointer;
+  color: var(--subtitle);
+  display: flex;
+  animation: fadeInUp 1.5s ease-out;
+  animation-delay: 1.5s;
+  animation-fill-mode: backwards;
+}
+
+section.hero .all-icons .icon:hover {
+  font-size: 1.6rem;
+  transition: 0.3s;
+  color: var(--icon-hover);
+}
+
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-50px);
   }
-  
-  section.hero .left-section {
-    flex-grow: 1;
-    animation: fadeInLeft 1.5s ease-out;
+  to {
+    opacity: 1;
+    transform: translateX(0);
   }
-  
-  section.hero .avatar {
-    width: 150px;
-    border-radius: 50%;
-    height: 160px;
-    border: 1px solid darkorange;
-    padding: 4px;
-    box-shadow: 2px 2px 40px gray inset;
-    animation: fadeIn 1.5s ease-out;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
   }
-  
-  section.hero h1.title {
-    font-size: 2.85rem;
-    line-height: 3.3rem;
-    margin: 24px 0;
-    color: var(--title);
-    animation: fadeInUp 1.5s ease-out;
-    animation-delay: 0.5s;
-    animation-fill-mode: backwards;
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
-  
-  section.hero p.sub-title {
-    color: var(--subtitle);
-    font-size: 0.9rem;
-    line-height: 1.7rem;
-    padding-bottom: 32px;
-    animation: fadeInUp 1.5s ease-out;
-    animation-delay: 1s;
-    animation-fill-mode: backwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
   }
-  
-  section.hero .all-icons {
-    font-size: 1.5rem;
-    gap: 1.5rem;
-    cursor: pointer;
-    color: var(--subtitle);
-    display: flex;
-    animation: fadeInUp 1.5s ease-out;
-    animation-delay: 1.5s;
-    animation-fill-mode: backwards;
+  to {
+    opacity: 1;
   }
-  
-  section.hero .all-icons .icon:hover {
-    font-size: 1.6rem;
-    transition: 0.3s;
-    color: var(--icon-hover);
+}
+.led-effect {
+  color: #1e90ff; /* Beautiful blue color */
+  text-shadow: 0 0 8px rgba(30, 144, 255, 0.6), 0 0 16px rgba(30, 144, 255, 0.5),
+    0 0 24px rgba(30, 144, 255, 0.4), 0 0 32px rgba(30, 144, 255, 0.3),
+    0 0 40px rgba(30, 144, 255, 0.2);
+  animation: led-animation 1s infinite alternate;
+}
+
+@keyframes led-animation {
+  0% {
+    text-shadow: 0 0 8px rgba(30, 144, 255, 0.6),
+      0 0 16px rgba(30, 144, 255, 0.5), 0 0 24px rgba(30, 144, 255, 0.4),
+      0 0 32px rgba(30, 144, 255, 0.3), 0 0 40px rgba(30, 144, 255, 0.2);
   }
-  
-  @keyframes fadeInLeft {
-    from {
-      opacity: 0;
-      transform: translateX(-50px);
-    }
-    to {
-      opacity: 1;
-      transform: translateX(0);
-    }
+  100% {
+    text-shadow: 0 0 16px rgba(30, 144, 255, 0.8),
+      0 0 24px rgba(30, 144, 255, 0.7), 0 0 32px rgba(30, 144, 255, 0.6),
+      0 0 40px rgba(30, 144, 255, 0.5), 0 0 48px rgba(30, 144, 255, 0.4);
   }
-  
-  @keyframes fadeInUp {
-    from {
-      opacity: 0;
-      transform: translateY(50px);
-    }
-    to {
-      opacity: 1;
-      transform: translateY(0);
-    }
-  }
-  
-  @keyframes fadeIn {
-    from {
-      opacity: 0;
-    }
-    to {
-      opacity: 1;
-    }
-  }
+}

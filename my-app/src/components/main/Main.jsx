@@ -1,16 +1,17 @@
-import React from "react";
+import React, { useState } from "react";
 import "./main.css";
 import { Link } from "react-router-dom";
 import Projects from "../../projects.json";
 
 function Main() {
+  const [currentActive,setCurrentActive]=useState("all");
   return (
     <main className="flex">
       <section className="flex left-section">
         <button className="active">All Projects</button>
         <button>PHP</button>
         <button>JS</button>
-        <button>REACT+LARAVEL</button>
+        <button>React</button>
         <button>REACT+LARAVEL</button>
       </section>
 
