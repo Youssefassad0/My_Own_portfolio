@@ -11,25 +11,25 @@ function Contact() {
         Contact Me For More Information and Get Notified
       </p>
       <div className="flex">
-        <form className="border">
-          <div>
+        <form>
+          <div className="flex" >
             <label htmlFor="email">Email Adress :</label>
             <input
               type="email"
               id="email"
               name="email"
+         
               placeholder="Email Adress"
             />
           </div>
-
           <div  className="flex" style={{ marginTop: "23px" }}  >
             <label htmlFor="message">
               Your Message :
             </label>
-            <textarea name="message" id="message"></textarea>
+            <textarea name="message" id="message" required ></textarea>
           </div>
 
-          <button>Send</button>
+          <button className="submit" >Send</button>
         </form>
 
         <div className="animation border"></div>
