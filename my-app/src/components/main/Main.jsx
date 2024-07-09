@@ -4,21 +4,55 @@ import { Link } from "react-router-dom";
 import Projects from "../../projects.json";
 
 function Main() {
-  const [currentActive,setCurrentActive]=useState("all");
+  const [currentActive, setCurrentActive] = useState("all");
+
+  const handleButtonClick = (category) => {
+    setCurrentActive(category);
+  };
+
+  const filteredProjects = currentActive === "all"
+    ? Projects
+    : Projects.filter((p) => p.category.toLowerCase() === currentActive.toLowerCase());
+
   return (
     <main className="flex">
       <section className="flex left-section">
-        <button className="active">All Projects</button>
-        <button>PHP</button>
-        <button>JS</button>
-        <button>React</button>
-        <button>REACT+LARAVEL</button>
+        <button
+          className={currentActive === "all" ? "active" : ""}
+          onClick={() => handleButtonClick("all")}
+        >
+          All Projects
+        </button>
+        <button
+          className={currentActive === "PHP" ? "active" : ""}
+          onClick={() => handleButtonClick("PHP")}
+        >
+          PHP
+        </button>
+        <button
+          className={currentActive === "JS" ? "active" : ""}
+          onClick={() => handleButtonClick("JS")}
+        >
+          JS
+        </button>
+        <button
+          className={currentActive === "React" ? "active" : ""}
+          onClick={() => handleButtonClick("React")}
+        >
+          React
+        </button>
+        <button
+          className={currentActive === "REACT+LARAVEL" ? "active" : ""}
+          onClick={() => handleButtonClick("REACT_LARAVEL")}
+        >
+          REACT+LARAVEL
+        </button>
       </section>
 
       <section className="flex right-section">
-        {Projects.map((p) => (
+        {filteredProjects.map((p) => (
           <article className="card" key={p.id}>
-            <img width={266} src={p.imageUrl} alt={p.title} />
+            <img width={266} src={p.imageUrl[0]} alt={p.title} />
             <div style={{ width: "266px" }} className="box">
               <h2 className="title">{p.title}</h2>
               <p className="sub-title">{p.description}</p>
