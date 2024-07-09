@@ -1,9 +1,41 @@
-import React from 'react'
-import './contact.css'
+import React from "react";
+import "./contact.css";
 function Contact() {
   return (
-    <div>Contact</div>
-  )
+    <section className="contact-us">
+      <h1 className="title">
+        <span className="icon-envelope-o"></span>
+        Contact Me
+      </h1>
+      <p className="sub-title">
+        Contact Me For More Information and Get Notified
+      </p>
+      <div className="flex">
+        <form className="border">
+          <div>
+            <label htmlFor="email">Email Adress :</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Email Adress"
+            />
+          </div>
+
+          <div  className="flex" style={{ marginTop: "23px" }}  >
+            <label htmlFor="message">
+              Your Message :
+            </label>
+            <textarea name="message" id="message"></textarea>
+          </div>
+
+          <button>Send</button>
+        </form>
+
+        <div className="animation border"></div>
+      </div>
+    </section>
+  );
 }
 
-export default Contact
+export default Contact;

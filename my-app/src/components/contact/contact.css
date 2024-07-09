@@ -1,0 +1,35 @@
+section.contact-us .icon-envelope-o {
+  color: var(--subtitle);
+  margin-right: 1rem;
+  font-size: 1.8rem;
+}
+section.contact-us .title {
+  font-size: 2.1rem;
+  color: var(--title);
+  margin-bottom: 1rem;
+}
+section.contact-us p.sub-title {
+  color: var(--subtitle);
+  margin-bottom: 2rem;
+  line-height: 1.66rem;
+
+}
+
+section.contact-us label{
+    color: var(--subtitle);
+
+}
+section.contact-us #email,  section.contact-us #message
+{
+    all: unset;
+    background: rgba(63, 63, 70, 0.15);
+    border: 1px solid rgb(63, 63, 70);
+    width: 17rem;
+    padding: 0.5rem 1rem;
+    margin-left: 1rem;
+    border-radius: 5px;
+}
+section.contact-us #email:focus,  section.contact-us #message:focus{
+    border: 1px solid rgb(45, 212, 191);
+
+}  

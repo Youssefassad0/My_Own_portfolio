@@ -24,8 +24,8 @@ function Hero() {
           <div className="icon icon-skype"></div>
         </div>
       </div>
-      <div className="right-section">
-     
+      <div className="right-section border animation">
+     animation
       </div>
     </section>
   );

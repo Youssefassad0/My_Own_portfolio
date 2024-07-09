@@ -2,7 +2,46 @@
     {
         "id":1,
         "title":"CritalInox website",
-        "descreption":"application web complète servant de portfolio pour l'entreprise, avec un tableau de bord interactif pour la gestion des employés, utilisateurs, produits, catégories et transactions.",
-        "link-github":""
+        "imageUrl":"./projects-image/home1.png",
+        "description":"application web complète servant de portfolio pour l'entreprise, avec un tableau de bord interactif pour la gestion des employés, utilisateurs, produits, catégories et transactions.",
+        "linkGithub":"https://github.com/Youssefassad0/portfolio_Company",
+        "technologie":["react","laravel"]
+
+    },
+    {
+        "id":2,
+        "title":"CritalInox website",
+        "imageUrl":"./projects-image/home1.png",
+        "description":"application web complète servant de portfolio pour l'entreprise, avec un tableau de bord interactif pour la gestion des employés, utilisateurs, produits, catégories et transactions.",
+        "linkGithub":"https://github.com/Youssefassad0/portfolio_Company",
+        "technologie":["react","laravel"]
+
+    },
+    {
+        "id":2,
+        "title":"CritalInox website",
+        "imageUrl":"./projects-image/home1.png",
+        "description":"application web complète servant de portfolio pour l'entreprise, avec un tableau de bord interactif pour la gestion des employés, utilisateurs, produits, catégories et transactions.",
+        "linkGithub":"https://github.com/Youssefassad0/portfolio_Company",
+        "technologie":["react","laravel"]
+
+    },
+    {
+        "id":2,
+        "title":"CritalInox website",
+        "imageUrl":"./projects-image/home1.png",
+        "description":"application web complète servant de portfolio pour l'entreprise, avec un tableau de bord interactif pour la gestion des employés, utilisateurs, produits, catégories et transactions.",
+        "linkGithub":"https://github.com/Youssefassad0/portfolio_Company",
+        "technologie":["react","laravel"]
+
+    },
+    {
+        "id":2,
+        "title":"CritalInox website",
+        "imageUrl":"./projects-image/home1.png",
+        "description":"application web complète servant de portfolio pour l'entreprise, avec un tableau de bord interactif pour la gestion des employés, utilisateurs, produits, catégories et transactions.",
+        "linkGithub":"https://github.com/Youssefassad0/portfolio_Company",
+        "technologie":["react","laravel"]
+
     }
 ]
