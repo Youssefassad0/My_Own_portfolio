@@ -4,6 +4,7 @@ import Main from "./components/main/Main";
 import Contact from "./components/contact/Contact";
 import Footer from "./components/footer/Footer";
 import { BrowserRouter } from "react-router-dom";
+import ParticleRing from "./components/ParticleRing/ParticleRing";
 
 function App() {
   return (
@@ -13,6 +14,8 @@ function App() {
       <Hero />
       <div className="devider" />
       <Main />
+      <div className="devider" />
+      <ParticleRing /> 
       <div className="devider" />
       <Contact />
       <div className="devider" />

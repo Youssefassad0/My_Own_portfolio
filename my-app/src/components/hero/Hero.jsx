@@ -12,7 +12,7 @@ function Hero() {
           Full Stack developer , ambitious and passionate
         </h1>
         <p className="sub-title">
-         I'm Assad Youssef, Ambitious and passionate about digital development, my goal is to
+         I'm Assad Youssef Ambitious and passionate about digital development, my goal is to
           become a full stack option engineer. I seeks to put into practice the
           skills I have acquired and to continue learning to contribute
           significantly to innovative and complex projects.
