@@ -9,6 +9,10 @@ function Header() {
       document.body.classList.remove("dark");
       document.body.classList.add("light");
     }
+    else{
+      document.body.classList.remove("light");
+      document.body.classList.add("dark");
+    }
   }, [theme]);
   const handleLight = () => {
     localStorage.setItem("mood", theme === "dark" ? "light" : "dark");
