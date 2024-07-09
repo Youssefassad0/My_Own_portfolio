@@ -10,7 +10,6 @@ function App() {
     <BrowserRouter>
     <div className="container">
       <Header />
-      <div className="devider" />
       <Hero />
       <div className="devider" />
       <Main />

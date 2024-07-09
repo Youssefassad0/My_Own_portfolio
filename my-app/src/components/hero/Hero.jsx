@@ -11,7 +11,7 @@ function Hero() {
         <h1 className="title">
           Full Stack developer , ambitious and passionate
         </h1>
-        <p className="sub-title" >
+        <p className="sub-title">
           Ambitious and passionate about digital development, my goal is to
           become a full stack option engineer. I seeks to put into practice the
           skills I have acquired and to continue learning to contribute
@@ -24,7 +24,12 @@ function Hero() {
           <div className="icon icon-skype"></div>
         </div>
       </div>
-      <div className="right-section animation border">animation</div>
+      <div className="right-section">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+      </div>
     </section>
   );
 }
