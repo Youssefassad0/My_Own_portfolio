@@ -8,14 +8,15 @@ function Hero() {
           <img src="image_assad1.png" className="avatar" alt="" />
           <span className=""></span>
         </div>
-        <h1 className="title">
-          Full Stack developer , ambitious and passionate
+        <h1 className="title led-effect">
+          Full Stack developer, ambitious and passionate
         </h1>
+
         <p className="sub-title">
-         I'm Assad Youssef Ambitious and passionate about digital development, my goal is to
-          become a full stack option engineer. I seeks to put into practice the
-          skills I have acquired and to continue learning to contribute
-          significantly to innovative and complex projects.
+          I'm Assad Youssef Ambitious and passionate about digital development,
+          my goal is to become a full stack option engineer. I seeks to put into
+          practice the skills I have acquired and to continue learning to
+          contribute significantly to innovative and complex projects.
         </p>
         <div className="all-icons flex">
           <div className="icon icon-github"></div>
@@ -24,9 +25,7 @@ function Hero() {
           <div className="icon icon-skype"></div>
         </div>
       </div>
-      <div className="right-section border animation">
-     animation
-      </div>
+      <div className="right-section border animation">animation</div>
     </section>
   );
 }

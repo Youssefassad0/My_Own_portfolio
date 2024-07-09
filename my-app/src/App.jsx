@@ -15,9 +15,9 @@ function App() {
       <div className="devider" />
       <Main />
       <div className="devider" />
-      <ParticleRing /> 
-      <div className="devider" />
       <Contact />
+      <div className="devider" />
+      <ParticleRing /> 
       <div className="devider" />
       <Footer />
     </div>

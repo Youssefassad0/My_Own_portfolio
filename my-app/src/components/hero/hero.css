@@ -8,7 +8,7 @@ section.hero {
   
   section.hero .left-section {
     flex-grow: 1;
-    animation: fadeInLeft 1s ease-out;
+    animation: fadeInLeft 1.5s ease-out;
   }
   
   section.hero .avatar {
@@ -18,7 +18,7 @@ section.hero {
     border: 1px solid darkorange;
     padding: 4px;
     box-shadow: 2px 2px 40px gray inset;
-    animation: fadeIn 1s ease-out;
+    animation: fadeIn 1.5s ease-out;
   }
   
   section.hero h1.title {
@@ -26,7 +26,9 @@ section.hero {
     line-height: 3.3rem;
     margin: 24px 0;
     color: var(--title);
-    animation: fadeInUp 1s ease-out;
+    animation: fadeInUp 1.5s ease-out;
+    animation-delay: 0.5s;
+    animation-fill-mode: backwards;
   }
   
   section.hero p.sub-title {
@@ -34,8 +36,9 @@ section.hero {
     font-size: 0.9rem;
     line-height: 1.7rem;
     padding-bottom: 32px;
-    animation: fadeInUp 1s ease-out;
-    animation-delay: 0.2s;
+    animation: fadeInUp 1.5s ease-out;
+    animation-delay: 1s;
+    animation-fill-mode: backwards;
   }
   
   section.hero .all-icons {
@@ -43,12 +46,14 @@ section.hero {
     gap: 1.5rem;
     cursor: pointer;
     color: var(--subtitle);
-    animation: fadeInUp 1s ease-out;
-    animation-delay: 0.4s;
+    display: flex;
+    animation: fadeInUp 1.5s ease-out;
+    animation-delay: 1.5s;
+    animation-fill-mode: backwards;
   }
   
   section.hero .all-icons .icon:hover {
-    font-size: 1.8rem;
+    font-size: 1.6rem;
     transition: 0.3s;
     color: var(--icon-hover);
   }
@@ -83,4 +88,3 @@ section.hero {
       opacity: 1;
     }
   }
-  
