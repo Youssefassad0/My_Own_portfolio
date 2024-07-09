@@ -25,10 +25,7 @@ function Hero() {
         </div>
       </div>
       <div className="right-section">
-          <span></span>
-          <span></span>
-          <span></span>
-          <span></span>
+     
       </div>
     </section>
   );

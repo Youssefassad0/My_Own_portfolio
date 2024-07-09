@@ -84,6 +84,9 @@ button {
 button:active {
   scale: 0.9;
 }
+button:hover {
+ cursor: pointer;
+}
 
 @media (max-width: 1000px) {
   .container {
