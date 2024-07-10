@@ -12,7 +12,7 @@
         "id":2,
         "title":"Assad Shop",
         "imageUrl":["./commerce/home1.png","image2.png","image3.png"],
-        "description":"The main objective of this project is to create a web e-commerce application for purchasing products, specifically clothing. ",
+        "description":"The main objective of this project is to create a web e-commerce application for purchasing products, specifically clothing.This application will allow users to easily and quickly purchase products, while providing me ",
         "linkGithub":"https://github.com/Youssefassad0/Ecommerce-Project",
         "category":"REACT_LARAVEL"
 

@@ -77,7 +77,7 @@ function Main() {
                       <div className="icon-github" />
                     </a>
                   </div>
-                  <Link to="" className="link flex">
+                  <Link to={`/project/${p.id}`} className="link flex">
                     more <span className="icon-redo2"></span>
                   </Link>
                 </div>
