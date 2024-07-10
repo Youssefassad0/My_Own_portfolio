@@ -2,13 +2,21 @@ import React, { useState } from "react";
 import { useParams } from "react-router-dom";
 import Projects from "../../projects.json";
 import { useSpring, animated } from "react-spring";
-import { Card, CardContent, CardMedia, Typography, Button } from '@mui/material';
+import {
+  Card,
+  CardContent,
+  CardMedia,
+  Typography,
+  Button,
+} from "@mui/material";
 import "./project.css";
 
 const ProjectDetail = () => {
   const { id } = useParams();
   const project = Projects.find((p) => p.id === parseInt(id));
-  const [currentImage, setCurrentImage] = useState(project ? project.imageUrl[0] : "");
+  const [currentImage, setCurrentImage] = useState(
+    project ? project.imageUrl[0] : ""
+  );
 
   const fadeIn = useSpring({ opacity: 1, from: { opacity: 0 }, delay: 200 });
 
@@ -18,11 +26,11 @@ const ProjectDetail = () => {
 
   return (
     <animated.div style={fadeIn} className="project-detail">
-      <Card className="project-card">
+      <div className="project-card" style={{backgroundColor:"var(--secondary)"}} >
         <CardContent>
-          <Typography variant="h4" gutterBottom>
+          <h2 className="title" >
             {project.title}
-          </Typography>
+          </h2>
           {currentImage && (
             <CardMedia
               component="img"
@@ -36,15 +44,20 @@ const ProjectDetail = () => {
           </Typography>
           <div className="additional-images">
             <div className="sliderSmall">
-              {project.imageUrl.map((image, index) => (
-                <div className="item" key={index} onClick={() => setCurrentImage(image)}>
-                  <img
-                    src={image}
-                    alt={`Additional ${index}`}
-                    className="slider-image w-100 cursor-pointer"
-                  />
-                </div>
-              ))}
+              {project.imageUrl[1] &&
+                project.imageUrl.map((image, index) => (
+                  <div
+                    className="item"
+                    key={index}
+                    onClick={() => setCurrentImage(image)}
+                  >
+                    <img
+                      src={image}
+                      alt={`Additional ${index}`}
+                      className="slider-image w-100 cursor-pointer"
+                    />
+                  </div>
+                ))}
             </div>
           </div>
           {project.linkGithub && (
@@ -68,7 +81,7 @@ const ProjectDetail = () => {
             ></iframe>
           )}
         </CardContent>
-      </Card>
+      </div>
     </animated.div>
   );
 };

@@ -1,9 +1,16 @@
-import React from 'react'
-
+import React from "react";
+import "./about.css"
 function About() {
   return (
-    <div>About</div>
-  )
+    <section className="aboutme">
+      <div className="about2">
+        <h2 className="about_title">
+          About <span>Me</span>
+        </h2>
+
+      </div>
+    </section>
+  );
 }
 
-export default About
+export default About;
