@@ -142,3 +142,12 @@ section.contact-us button.submit:active {
   border: 1px solid rgb(38, 38, 41);
   box-shadow: -1px -1px 2px 2px gray;
 }
+@media (max-width: 1200px) {
+  section.contact-us .contact-animation {
+    display: none;
+  }
+}
+section.contact-us .contact-animation {
+
+  translate: 10px 5px ;
+}

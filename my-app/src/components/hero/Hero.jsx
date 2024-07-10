@@ -1,11 +1,22 @@
-import React from "react";
+import React, { useRef } from "react";
 import "./hero.css";
+import Lottie from "lottie-react";
+import dev from "../../animations/dev2.json";
+import { motion } from "framer-motion";
 function Hero() {
+  const lottieRef = useRef();
   return (
     <section className="hero flex">
       <div className="left-section">
         <div className="parent-avatar">
-          <img src="image_assad1.png" className="avatar" alt="" />
+          <motion.img
+            initial={{ transform: "scale:0" }}
+            animate={{ transform: "scale:1" }}
+            transition={{ duration: 2, type: "spring", stiffness: 300 }}
+            src="image_assad1.png"
+            className="avatar"
+            alt=""
+          />
           <span className=""></span>
         </div>
         <h1 className="title led-effect">
@@ -25,7 +36,17 @@ function Hero() {
           <div className="icon icon-skype"></div>
         </div>
       </div>
-      <div className="right-section border animation">animation</div>
+      <div className="right-section animation">
+        <Lottie
+          lottieRef={lottieRef}
+          className=""
+          onLoadedImages={() => {
+            lottieRef.current.setSpeed(0.3);
+          }}
+          height={200}
+          animationData={dev}
+        />
+      </div>
     </section>
   );
 }

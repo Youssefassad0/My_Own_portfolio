@@ -2,7 +2,6 @@ import Hero from "./components/hero/Hero";
 import Main from "./components/main/Main";
 import Contact from "./components/contact/Contact";
 import Footer from "./components/footer/Footer";
-import ParticleRing from "./components/ParticleRing/ParticleRing";
 import { useEffect, useState } from "react";
 
 function App() {
@@ -21,11 +20,9 @@ function App() {
     <>
       <Hero />
       <div className="devider" />
-      <Main />
+      <Main id="#projects" />
       <div className="devider" />
       <Contact />
-      <div className="devider" />
-      <ParticleRing />
       <div className="devider" />
       <Footer />
 

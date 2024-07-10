@@ -10,11 +10,11 @@
     },
     {
         "id":2,
-        "title":"CritalInox website",
-        "imageUrl":["./projects-image/home1.png",""],
-        "description":"application web complète servant de portfolio pour l'entreprise, avec un tableau de bord interactif pour la gestion des employés, utilisateurs, produits, catégories et transactions.",
-        "linkGithub":"https://github.com/Youssefassad0/portfolio_Company",
-        "category":"PHP"
+        "title":"Assad Shop",
+        "imageUrl":["./commerce/home1.png","image2.png","image3.png"],
+        "description":"The main objective of this project is to create a web e-commerce application for purchasing products, specifically clothing. ",
+        "linkGithub":"https://github.com/Youssefassad0/Ecommerce-Project",
+        "category":"REACT_LARAVEL"
 
     },
     {
