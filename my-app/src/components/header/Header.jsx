@@ -39,7 +39,7 @@ function Header() {
             <Link to="/projects">Projects</Link>
           </li>
           <li>
-            <Link to="/contact">Contact</Link>
+            <Link to="/services">services</Link>
           </li>
         </ul>
       </nav>
@@ -78,8 +78,8 @@ function Header() {
               </Link>
             </li>
             <li>
-              <Link to="/contact" onClick={() => setShowModal(false)}>
-                Contact
+              <Link to="/services" onClick={() => setShowModal(false)}>
+                services
               </Link>
             </li>
           </ul>
