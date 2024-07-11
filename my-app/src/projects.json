@@ -1,32 +1,35 @@
 [
-    {
-      "id": 1,
-      "title": "CritalInox website",
-      "imageUrl": ["/projects-image/home1.png", "/projects-image/home2.png"],
-      "description": "application web complète servant de portfolio pour l'entreprise, avec un tableau de bord interactif pour la gestion des employés, utilisateurs, produits, catégories et transactions.",
-      "linkGithub": "https://github.com/Youssefassad0/portfolio_Company",
-      "linkRapport":"/rapports/rapport1.pdf",
-      "category": "REACT_LARAVEL"
-    },
-    {
-      "id": 2,
-      "title": "Assad Shop",
-      "imageUrl": ["/commerce/home1.png", "/commerce/image2.png", "/commerce/image3.png"],
-      "description": "The main objective of this project is to create a web e-commerce application for purchasing products, specifically clothing. This application will allow users to easily and quickly purchase products, while providing me",
-      "linkGithub": "https://github.com/Youssefassad0/Ecommerce-Project",
-      "linkRapport":"/rapports/rapport2.pdf",
+  {
+    "id": 1,
+    "title": "CritalInox website",
+    "imageUrl": ["/projects-image/home1.png", "/projects-image/home2.png"],
+    "description": "application web complète servant de portfolio pour l'entreprise, avec un tableau de bord interactif pour la gestion des employés, utilisateurs, produits, catégories et transactions.",
+    "linkGithub": "https://github.com/Youssefassad0/portfolio_Company",
+    "linkRapport": "/rapports/rapport1.pdf",
+    "category": "REACT_LARAVEL"
+  },
+  {
+    "id": 2,
+    "title": "Assad Shop",
+    "imageUrl": [
+      "/commerce/home1.png",
+      "/commerce/image2.png",
+      "/commerce/image3.png"
+    ],
+    "description": "The main objective of this project is to create a web e-commerce application for purchasing products, specifically clothing. This application will allow users to easily and quickly purchase products, while providing me",
+    "linkGithub": "https://github.com/Youssefassad0/Ecommerce-Project",
+    "linkRapport": "/rapports/rapport2.pdf",
 
-      "category": "REACT_LARAVEL"
-    },
-    {
-      "id": 3,
-      "title": "Car Rantel ",
-      "imageUrl": ["/voitures/home1.png"],
-      "description": "application web complète servant de portfolio pour l'entreprise, avec un tableau de bord interactif pour la gestion des employés, utilisateurs, produits, catégories et transactions.",
-      "linkGithub": "https://github.com/Youssefassad0/portfolio_Company",
-      "linkRapport":"/rapports/rapport2.docx",
+    "category": "REACT_LARAVEL"
+  },
+  {
+    "id": 3,
+    "title": "Car Rantel ",
+    "imageUrl": ["/voitures/home1.png"],
+    "description": "The Car Rental Management System is a comprehensive web application designed to facilitate the efficient management of car rentals. The system provides a seamless interface for managing cars, users, and rental transactions, ensuring a smooth experience for both the rental company and its customers.",
+    "linkGithub": "https://github.com/Youssefassad0/gestion_location",
+    "linkRapport": "/rapports/rapport2.docx",
 
-      "category": "REACT_LARAVEL"
-    }
-  ]
-  
+    "category": "REACT_LARAVEL"
+  }
+]
