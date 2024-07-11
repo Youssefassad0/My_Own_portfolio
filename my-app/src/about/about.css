@@ -1,3 +1,141 @@
-.aboutme .about_title{
-    font-size: 20px;
-}
+.aboutme {
+    padding: var(--container-padding);
+  }
+  
+  .about_title {
+    margin-top: 20px;
+    font-size: 2.4rem;
+    font-weight: 800;
+    margin-bottom: 70px;
+    color: var(--title);
+    text-align: center;
+  }
+
+  .about_title span {
+    color: var(--primary-color);
+  }
+  
+  .about__container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    align-items: start;
+  }
+  
+  .about__info, .stats {
+    background: var(--secondary);
+    padding: var(--container-padding);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .section__subtitle {
+    font-size: 1.8rem;
+    color: var(--primary-color);
+    margin-bottom: 10px;
+  }
+  
+  .info__list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .info__item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+  }
+  
+  .info__title {
+    font-weight: bold;
+    color: var(--primary-color);
+  }
+  
+  .info__description {
+    color: var(--text-color);
+  }
+  
+  .about__buttom {
+    margin-top: 20px;
+    background-color: var(--secondary-color);
+    color: #fff;
+    font-weight: bold;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .about__buttom:hover {
+    background-color: var(--primary-color);
+  }
+  
+  .stats__box {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .stats__no {
+    font-size: 2.5rem;
+    color: var(--primary-color);
+    font-weight: bold;
+  }
+  
+  .stats__title {
+    font-size: 1rem;
+    color: var(--text-color);
+  }
+  .stats {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+  .skills {
+    margin-top: 50px;
+  }
+  
+  .skills__title {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: var(--title);
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  .skills_container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-items: center;
+    gap: 20px;
+  }
+  
+  .progress__circle {
+    width: 120px;
+    height: 120px;
+  }
+  /* .CircularProgressbar-colorPrimary {
+    stroke: antiquewhite !important;
+  } */
+  
+  @media (max-width: 600px) {
+    .about__container {
+      grid-template-columns: 1fr;
+    }
+  
+    .stats {
+      grid-template-columns: 1fr;
+    }
+  
+    .skills_container {
+      grid-template-columns: 1fr;
+    }
+  }
+  @media (max-width: 800px) {
+    .skills_container {
+        align-items: center;
+        justify-content: center;
+        grid-template-columns: repeat(2, 1fr);
+    }
+  }

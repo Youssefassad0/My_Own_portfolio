@@ -62,7 +62,7 @@ function Main() {
               className="card"
               key={p.id}
             >
-              <img width={266} src={p.imageUrl[0]} alt={p.title} />
+              <img width={266} src={p.imageUrl[0]} alt={p.title} height={150} />
               <div style={{ width: "266px" }} className="box">
                 <h2 className="title">{p.title}</h2>
                 <p className="sub-title">{p.description}</p>

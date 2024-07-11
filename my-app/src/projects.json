@@ -20,8 +20,8 @@
     },
     {
       "id": 3,
-      "title": "CritalInox website",
-      "imageUrl": ["/projects-image/home1.png", "/projects-image/home2.png"],
+      "title": "Car Rantel ",
+      "imageUrl": ["/voitures/home1.png"],
       "description": "application web complète servant de portfolio pour l'entreprise, avec un tableau de bord interactif pour la gestion des employés, utilisateurs, produits, catégories et transactions.",
       "linkGithub": "https://github.com/Youssefassad0/portfolio_Company",
       "linkRapport":"/rapports/rapport2.docx",

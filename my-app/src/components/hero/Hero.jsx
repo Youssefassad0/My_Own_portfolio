@@ -20,7 +20,7 @@ function Hero() {
             transition={{
               duration: 10,
               repeat: Infinity,
-              repeatType: "reverse"
+              repeatType: "reverse",
             }}
             className="circle-svg"
           >
@@ -56,10 +56,30 @@ function Hero() {
           contribute significantly to innovative and complex projects.
         </p>
         <div className="all-icons flex">
-          <div className="icon icon-github"></div>
-          <div className="icon icon-linkedin-square"></div>
-          <div className="icon icon-instagram"></div>
-          <div className="icon icon-skype"></div>
+          <a
+            href="https://github.com/Youssefassad0"
+            target="_blank"
+            className="icon icon-github"
+            style={{ color: "var(--subtitle)" }}
+          ></a>
+          <a
+            href="https://www.linkedin.com/in/youssef-assad-a8204b289/"
+            target="_blank"
+            className="icon icon-linkedin-square"
+            style={{ color: "var(--subtitle)" }}
+          ></a>
+          <a
+            href="https://www.instagram.com/assad_youssef_/"
+            target="_blank"
+            className="icon icon-instagram"
+            style={{ color: "var(--subtitle)" }}
+          ></a>
+          <a
+            href="https://join.skype.com/invite/Hr5r80a8HrRR"
+            className="icon icon-skype"
+            style={{ color: "var(--subtitle)" }}
+            target="_blank"
+          ></a>
         </div>
       </div>
       <div className="right-section animation">
