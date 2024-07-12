@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'icomoon';
-  src:  url('fonts/icomoon.eot?3p16gv');
-  src:  url('fonts/icomoon.eot?3p16gv#iefix') format('embedded-opentype'),
-    url('fonts/icomoon.ttf?3p16gv') format('truetype'),
-    url('fonts/icomoon.woff?3p16gv') format('woff'),
-    url('fonts/icomoon.svg?3p16gv#icomoon') format('svg');
+  src:  url('fonts/icomoon.eot?h6lrov');
+  src:  url('fonts/icomoon.eot?h6lrov#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?h6lrov') format('truetype'),
+    url('fonts/icomoon.woff?h6lrov') format('woff'),
+    url('fonts/icomoon.svg?h6lrov#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -25,8 +25,22 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-atom:before {
+  content: "\e905";
+  color: #66595c;
+}
+.icon-dev-dot-to:before {
+  content: "\e906";
+}
+.icon-strapi:before {
+  content: "\e907";
+  color: #2e7eea;
+}
 .icon-envelope-o:before {
   content: "\f003";
+}
+.icon-download:before {
+  content: "\f019";
 }
 .icon-linkedin-square:before {
   content: "\f08c";
@@ -46,23 +60,29 @@
 .icon-skype:before {
   content: "\f17e";
 }
+.icon-database:before {
+  content: "\f1c0";
+}
 .icon-moon:before {
   content: "\e902";
 }
 .icon-sun:before {
   content: "\e900";
 }
-.icon-download:before {
-  content: "\e904";
-}
 .icon-circle-with-cross:before {
   content: "\e901";
+}
+.icon-cross:before {
+  content: "\e904";
 }
 .icon-menu:before {
   content: "\e903";
 }
 .icon-redo2:before {
   content: "\e968";
+}
+.icon-arrow-right2:before {
+  content: "\ea3c";
 }
 .icon-circle-up:before {
   content: "\ea41";

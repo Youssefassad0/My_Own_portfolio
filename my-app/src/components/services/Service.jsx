@@ -34,7 +34,8 @@ function Service() {
         "Optimization and performance tuning.",
         "Data migration and integration.",
         "Database security and backup."
-      ]
+      ],
+      icon:"icon-database"
     },
     {
       title: "API Development",
@@ -44,7 +45,9 @@ function Service() {
         "API security and authentication.",
         "Integration with front-end and mobile applications.",
         "API documentation and testing."
-      ]
+      ],
+      icon:"icon-strapi"
+
     },
     {
       title: "Back-End Development",
@@ -54,7 +57,8 @@ function Service() {
         "Business logic implementation.",
         "Database connectivity.",
         "Performance optimization and scaling."
-      ]
+      ],
+      icon:"icon-dev-dot-to"
     }
   ];
 
@@ -66,8 +70,8 @@ function Service() {
         {services.map((service, index) => (
           <div className="services_content" key={index}>
             <div>
-              <i className="uil uil-server service_icon">
-                
+              <i className={service.icon}>
+
               </i>
               <h3 className="services_title">{service.title}</h3>
             </div>
@@ -78,7 +82,7 @@ function Service() {
             {activeModal === index && (
               <div className="services_modal">
                 <div className="services_modal-content">
-                  <i className="uil uil-times services_modal-close" onClick={() => toggleModal(index)}></i>
+                  <i className="icon-cross" onClick={() => toggleModal(index)}></i>
                   <h3 className="services_modal-title">{service.title}</h3>
                   <p className="services_modal-description">{service.description}</p>
                   <ul className="services_modal-services">
