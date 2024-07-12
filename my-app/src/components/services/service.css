@@ -40,14 +40,8 @@
   width: calc(33.333% - 2rem);
   position: relative;
   cursor: pointer;
-  transition: 0.4s;
-  
 }
-.services_content:hover{
-  scale: 1.1;
-  border: 1px solid var(--blue);
 
-}
 
 .services__title {
   display: inline-block;
