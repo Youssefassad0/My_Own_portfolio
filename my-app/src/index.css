@@ -41,6 +41,10 @@ html {
     rgba(255, 255, 255, 0.05),
     rgba(255, 255, 255, 0.116)
   );
+  --bg-modal:linear-gradient(
+    rgba(0, 0, 0, 0.808),
+    rgba(131, 97, 97, 0.944)
+  );
 }
 
 .light {
@@ -60,6 +64,10 @@ html {
   --bg-card: linear-gradient(
     rgba(255, 255, 255, 0.05),
     rgba(255, 255, 255, 0.116)
+  );
+  --bg-modal:linear-gradient(
+    rgba(241, 233, 233, 0.808),
+    rgba(200, 193, 193, 0.944)
   );
 }
 

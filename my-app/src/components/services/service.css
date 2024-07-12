@@ -40,6 +40,7 @@
   width: calc(33.333% - 2rem);
   position: relative;
   cursor: pointer;
+  
 }
 
 
@@ -59,6 +60,7 @@
 
 .services_modal {
   background: rgba(0, 0, 0, 0.5);
+
   bottom: 0;
   left: 0;
   position: fixed;
@@ -71,7 +73,8 @@
 }
 
 .services_modal-content {
-  background: #fff;
+  background:var(--bg-modal);
+  color: var(--title);
   padding: 2rem;
   border-radius: 0.5rem;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
@@ -86,6 +89,7 @@
   top: 1rem;
   right: 1rem;
   cursor: pointer;
+  
 }
 
 .services_modal-title {

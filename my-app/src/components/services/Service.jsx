@@ -27,33 +27,33 @@ function Service() {
 
   const services = [
     {
-      title: "Web Development",
-      description: "Service with more than 1 year of experience. Providing quality work to clients and companies.",
+      title: "Database Management",
+      description: "Over 1 year of experience in managing databases efficiently for clients and companies.",
       details: [
-        "I develop the User Interface.",
-        "Web Page development.",
-        "I create UX element Interactions.",
-        "I manage the databases."
+        "Database design and development.",
+        "Optimization and performance tuning.",
+        "Data migration and integration.",
+        "Database security and backup."
       ]
     },
     {
-      title: "Mobile Development",
-      description: "Service with more than 1 year of experience. Providing quality work to clients and companies.",
+      title: "API Development",
+      description: "Over 1 year of experience in creating robust and scalable APIs for various applications.",
       details: [
-        "I develop mobile applications.",
-        "App UI/UX design.",
-        "Performance optimization.",
-        "I manage app data storage."
+        "Designing RESTful APIs.",
+        "API security and authentication.",
+        "Integration with front-end and mobile applications.",
+        "API documentation and testing."
       ]
     },
     {
-      title: "UI/UX Design",
-      description: "Service with more than 1 year of experience. Providing quality work to clients and companies.",
+      title: "Back-End Development",
+      description: "Specialized in server-side logic and integration with databases and front-end systems.",
       details: [
-        "I design user-friendly interfaces.",
-        "Wireframing and prototyping.",
-        "User research and testing.",
-        "Interaction design."
+        "Server setup and management.",
+        "Business logic implementation.",
+        "Database connectivity.",
+        "Performance optimization and scaling."
       ]
     }
   ];
@@ -66,7 +66,9 @@ function Service() {
         {services.map((service, index) => (
           <div className="services_content" key={index}>
             <div>
-              <i className="uil uil-service_icon"></i>
+              <i className="uil uil-server service_icon">
+                
+              </i>
               <h3 className="services_title">{service.title}</h3>
             </div>
             <span className="services__title" onClick={() => toggleModal(index)}>
