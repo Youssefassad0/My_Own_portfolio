@@ -52,10 +52,7 @@ main section.right-section.flex {
   border: 1px solid rgba(93, 188, 252, 0.3);
   border-radius: 7px;
   transition: 0.4s;
-  background-image: linear-gradient(
-    rgba(255, 255, 255, 0.05),
-    rgba(255, 255, 255, 0.116)
-  );
+  background-image:var(--bg-card);
 }
 .card:hover {
   border: 1px solid var(--blue);

@@ -36,6 +36,11 @@ html {
   --secondary-color: #03dac5;
   --background-color: #f4f4f4;
   --container-padding: 20px;
+  --text-shadow: #1e90ff;
+  --bg-card: linear-gradient(
+    rgba(255, 255, 255, 0.05),
+    rgba(255, 255, 255, 0.116)
+  );
 }
 
 .light {
@@ -50,8 +55,13 @@ html {
   --scrollbar-bg: #ddd;
   --scrollbar-thumb: #bbb;
   --scrollbar-thumb-hover: #888;
-}
+  --text-shadow: #94a0ac;
 
+  --bg-card: linear-gradient(
+    rgba(255, 255, 255, 0.05),
+    rgba(255, 255, 255, 0.116)
+  );
+}
 
 body {
   background-color: var(--primary);
